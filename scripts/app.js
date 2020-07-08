@@ -53,7 +53,8 @@ cityForm.addEventListener("submit", e => {
     })
     .catch(err => {
         console.log(err)
-        isValid.classList.remove("d-none")
+        isValid.classList.remove("d-none");
+        isValid.style.color = "red";
         isValid.innerHTML = "Type in a correct city :)";
         card.classList.add("d-none");
     })
